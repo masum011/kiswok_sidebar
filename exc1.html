@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="esc1.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<style>
+    :root{
+        --font_cr: pink;
+    }
+    ui{
+        display: flex;
+        flex-direction: column;
+    }
+    li:nth-child(odd){
+        margin-left: 20px;
+        background-color: red;
+        margin-top: 5px;
+        height: 100px;
+        width: 100px;
+        animation: mymove 10s infinite;
+        position: relative;
+    
+    }
+    li:nth-child(even){
+        margin-left: 20px;
+        background-color: green;
+        margin-top: 5px;
+        height: 100px;
+        width: 100px;
+        animation: mymove 20s infinite;
+        position: relative;
+    
+    }
+    @keyframes mymove{
+        from {left:0px;}
+        to {left: 100%;}
+    }
+    p{
+        color: var(--font_cr);
+    }
+    li:nth-child(even):hover{
+        transform: scale(1.5);
+    }
+
+</style>
+
+<body>
+
+    <h3>Upload your images</h3>
+
+    <div class="field">
+        <input type="file" id="files" name="files[]" multiple />
+    </div>
+    <div class="maindiv">
+        <ui>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ui>
+
+        <p>this is paragraph</p>
+    </div>
+
+
+
+
+
+
+
+    <!-- <script src="exc1.js"></script> -->
+</body>
+
+</html>

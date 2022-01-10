@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 32px repeat(6, minmax(100px, 1fr));
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .calendar>p {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        border: 1px solid;
+    }
+    
+    .today {
+        background: green;
+    }
+    
+    .navigation {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .date {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <p class="date"></p>
+    <section class="calendar">
+        <p>sun</p>
+        <p>Mon</p>
+        <p>Tue</p>
+        <p>Wed</p>
+        <p>Thur</p>
+        <p>Fri</p>
+        <p>Sat</p>
+    </section>
+    <div class="navigation">
+        <button class="prev">Previous Month</button>
+        <button class="next">Next Month</button>
+    </div>
+</body>
+
+</html>

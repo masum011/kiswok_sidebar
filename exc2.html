@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exc2.css">
+</head>
+
+<body>
+    <p>grid mathod</p>
+    <div class="maindiv">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four" id="four">4</div>
+        <div class="item five">5</div>
+        <div class="item six">6</div>
+        <div class="item seven">7</div>
+        <div class="item eight">8</div>
+    </div>
+    <br>
+    <div class="maindiv_two">
+        <div class="devtest">one</div>
+        <div class="devtest">two</div>
+        <button class="devtest" onclick="oncli()">three</button>
+        <div class="devtest">four</div>
+    </div>
+    <script>
+        let maindiv = document.querySelector('.maindiv_two').childNodes[5];
+
+        function oncli() {
+            document.getElementById('four').style.color = "red";
+        }
+    </script>
+</body>
+
+</html>

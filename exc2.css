@@ -1,0 +1,81 @@
+.maindiv {
+    background-color: chocolate;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #b2bbc5;
+}
+
+.item:hover {
+    transform: scale(1.4);
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.one {
+    grid-column: 1/span 3;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 1/span 3;
+    grid-row: 3;
+}
+
+.maindiv_two {
+    background-color: mediumturquoise;
+    padding: 20px;
+}
+
+.devtest {
+    background-color: red;
+    padding: 20px;
+    margin: 5px;
+    width: 50px;
+    text-align: center;
+    display: inline;
+}
+
+@media (max-width: 500px) {
+    .maindiv {
+        background-color: lightslategrey;
+        width: 80%;
+        margin: auto
+    }
+    .item {
+        padding: 2px;
+    }
+    .item:hover {
+        transform: scale(1.1);
+        transition: 2s ease-out;
+    }
+    .maindiv_two {
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+    }
+    .devtest {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .devtest:hover {
+        background-color: royalblue;
+        transition: background-color 2s ease-out;
+        cursor: pointer;
+    }
+}
